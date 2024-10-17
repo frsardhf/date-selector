@@ -34,7 +34,7 @@ const DateSelector = () => {
     setSelectedDate(prev => {
       const newDate = { ...prev, [type]: value };
       if (type !== 'day') {
-        newDate.day = 'Select Date';
+        newDate.day = DEFAULT_LABELS.day;
       }
       return newDate;
     });
